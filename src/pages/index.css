@@ -13,27 +13,27 @@
   }
   
   .healthyCode-bg {
-    background-image: url('https://pic1.imgdb.cn/item/634a7dd216f2c2beb1509a22.png');
+    background-image: url('../asset/mainpage.png');
   }
 
   .playground-bg-container {
     height: 115vh;
-    background-image: url('https://pic1.imgdb.cn/item/634a7dd216f2c2beb1509a28.png');
+    background-image: url('../asset/playground-03.png');
   }
 
   .travel-bg-container {
     height: 100vh;
-    background-image: url('https://pic1.imgdb.cn/item/634a290516f2c2beb1bfdfc6.png');
+    background-image: url('../asset/travel-02.png');
   }
 
   .report-bg-container {
     height: 115vh;
-    background-image: url('https://pic1.imgdb.cn/item/634a849816f2c2beb15b17c5.png');
+    background-image: url('../asset/report.jpg');
   }
 
   .success-icon-wrapper {
     position: absolute;
-    top: 350px;
+    top: 430px;
   }
 
   .travel-date {
@@ -80,7 +80,7 @@
   .marqueeWrapper {
     width: 100%;
     position: absolute;
-    top: 194px;
+    top: 196px;
     display: flex;
     justify-content: center;
   }
@@ -88,10 +88,9 @@
     overflow: hidden;
     width: 78%;
     margin-left: 8%;
-    /* font-size: 12px; */
   }
   .marqueeWrapper .container .moving-text {
-    font-size: 9px;
+    font-size: 14px;
   }
   
     /* Makes the animation pause on hover */
@@ -111,11 +110,11 @@
     }
   
     /* media query to enable animation for only those who want it */
-    @media (prefers-reduced-motion: no-preference) {
+    /* @media (prefers-reduced-motion: no-preference) {
         .img-wrapper img{
             animation: imgScale 1s linear infinite;
         }
-    }
+    } */
 
   .playGround-code, .travel-report-code {
     width: 100%;
@@ -264,4 +263,30 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .main-container .date-wrapper {
+    width: 100vw;
+    position: absolute;
+    top: 350px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  .main-container .date-wrapper span {
+    display: inline-block;
+    width: 65%;
+    text-align: center;
+  }
+
+  .pg-proveWrapper {
+    position: absolute;
+    top: 735px;
+    left: 46px;
+    color: #fff;
+    opacity: .8;
+    font-size: 10px;
+    font-family: 'microsoft yahei';
   }

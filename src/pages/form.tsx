@@ -47,16 +47,16 @@ const Form = () => {
 
     return (
         <div className="form-container">
-            <p style={{ fontSize: 16 }}>所在区域：</p>
+            <p>所在区域：</p>
             <div className='area-wrapper'>
                { areaList.map(item => <div key={item.value} className={`area-item ${area === item.area && 'area-item-active'}`} onClick={()=> setArea(item.area)}>{item.area}</div>)} 
             </div>
 
-            <p style={{ fontSize: 16 }}>所在地名：</p>
+            <p>所在地名：</p>
             <input type="text" style={{ paddingLeft: '5px' }} placeholder="请输入所在地" onChange={(e) => setPlace(e.target.value)} />
             <br />
             <button 
-                style={{marginTop: 12, height: 40}} 
+                style={{marginTop: 12, lineHeight: 3 }} 
                 onClick={() => {
                     window.sessionStorage.setItem('area', area)
                     window.sessionStorage.setItem('place', place)
